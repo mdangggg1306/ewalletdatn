@@ -1,0 +1,153 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.modalContent {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #95a5a6;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.closeButton:hover {
+  color: #e74c3c;
+  transform: rotate(90deg);
+}
+
+.serviceList {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.serviceButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.serviceButton:hover {
+  background-color: #e9ecef;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.serviceButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.serviceName {
+  font-weight: bold;
+  color: #34495e;
+  font-size: 1rem;
+}
+
+.servicePrice {
+  color: #2980b9;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cancelButton {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cancelButton:hover {
+  background-color: #c0392b;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cancelButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.error {
+  color: #e74c3c;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #fadbd8;
+  padding: 10px;
+  border-radius: 10px;
+  animation: errorShake 0.5s ease-in-out;
+}
+
+@keyframes errorShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+

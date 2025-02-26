@@ -1,0 +1,111 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://www.huce.edu.vn/theme1/images/gallery/Rectangle14.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  background-color: #003876;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-logo {
+  height: 60px;
+  width: auto;
+}
+
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 14px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-logo {
+  width: 100px;
+  margin-bottom: 10px;
+  filter: invert(29%) sepia(100%) saturate(748%) hue-rotate(187deg) brightness(95%) contrast(101%);
+}
+
+.form-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #003876;
+  margin-bottom: 5px;
+}
+
+.login-title {
+  color: #044eb7;
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.input-text {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  color: white;
+  background-color: #003876;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #002d5f;
+}

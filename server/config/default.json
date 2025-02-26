@@ -1,0 +1,8 @@
+{
+  "vnp_TmnCode":"K3RQ63LD",
+  "vnp_HashSecret":"BXZI1UXWF3XMTQP7DKQ3I2GLO2GNS31E",
+  "vnp_Url":"https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_Api":"https://sandbox.vnpayment.vn/merchant_webapi/api/transaction",
+  "vnp_ReturnUrl": "https://c23d-2001-ee0-1a5e-3fec-6926-106d-bc86-6767.ngrok-free.app/vnpay/deposit/vnpay_return"
+}
+
